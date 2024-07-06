@@ -1,0 +1,93 @@
+@media (max-width: 991px){
+    .team .card{
+        width: 48%; 
+    }
+    
+    .our-work .container img{
+        display: block;
+        width: 49%;
+    }
+}
+
+
+
+@media (max-width: 600px){
+    .nav{
+        position: relative;
+    }
+    .btn-toggel{
+        display:block;
+        float: right;
+        padding: 16px;
+        height: 100%;
+        line-height: 1.3;
+        cursor: pointer;
+    }
+    .btn-toggel:hover{
+        background-color: #ccc ;
+    }
+   
+    ul.menu{
+        display: none;
+    
+    }
+    ul.menu li{
+        display: block;
+        width: 100%;
+    }
+    ul.menu li a {
+        width: 100%;
+    }
+    ul.menu li a:hover{
+        color: #000;
+    }
+    ul.menu li a:target{
+        display: none;
+    }
+    ul.menu li label{
+        float: none;
+        font-size: 18px;
+    }
+    ul.menu i {
+        display: none;
+    }
+    #toggel:checked + .menu {
+        display: inline-block;
+        width: 200px;
+        height: 100vh;
+        background-color: black;
+        color: #fff;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+
+    .about .card-group .card{
+        width: 100%;
+    }
+    .we-know div{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .we-know div:last-child{
+        margin-bottom: 0px;
+    }
+
+    .team .card{
+        width: 100%; 
+    }
+
+    .statistics .container div{
+        width: 100%;
+    }
+
+    .our-work .container img{
+        width: 100%;
+    }
+
+    .price .card{
+        width: 100%;
+        
+    }
+}

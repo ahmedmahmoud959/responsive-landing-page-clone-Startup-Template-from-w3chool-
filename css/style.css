@@ -1,0 +1,535 @@
+
+@font-face {
+    font-family: "Raleway";
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style:normal;
+    src: url(../google-fonts/Raleway-VariableFont_wght.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0 0;
+    margin: 0 0;
+    font-family: "Raleway",sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+ul{
+
+    list-style: none;
+}
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.btn{
+    display: block;
+    padding: 12px 20px;
+    background-color: #000 ;
+    color: #fff;
+    width: fit-content;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+.btn i {
+    margin-right: 8px;
+}
+
+.second-btn {
+    display: inline-block;
+    width: fit-content;
+    padding:20px 20px;
+    background-color: #ccccccaf;
+    font-size: 18px;
+    color: #000;
+}
+.second-btn:hover{
+    background-color: #ccc;
+}
+.btn-toggel {
+    display: none;
+}
+#toggel{
+    display: none;
+}
+/* ######################################## */
+/* ########### header ################ */
+header {
+    font-size: 14px;
+}
+nav {
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 1px -3px 10px 0px #000;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+nav h1{
+    font-weight: lighter;
+    display: block;
+    float:left;
+    height: fit-content;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+nav a{
+    display: inline-block;   
+    padding: 16px;
+    height: 100%;
+}
+nav a:hover{
+    background-color: #ccc ;
+}
+nav ul {
+    float: right;
+}
+nav ul li{
+    display:inline-block;
+}
+nav ul li a{
+    line-height: 1.3;
+}
+nav ul li a i{
+    margin-right: 5px;
+}
+/* ########################################## */
+/* ############# hero section ############ */
+
+.hero {
+    width: 100%;
+    height:100vh;
+    background-image: url(../img/header.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: relative;
+    color: #FFF;
+    
+}
+
+.hero .shadow {
+    width: 100%;
+    height: 100%;
+    background-color: #00000071;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: 0;
+}
+.hero .hero-content {
+    position: absolute;
+    z-index: 1;
+    top:0%;
+    left: 3%;
+    transform: translate(0%, 50%);
+    -webkit-transform: translate(0%, 50%);
+    -moz-transform: translate(0%, 50%);
+    -ms-transform: translate(0%, 50%);
+    -o-transform: translate(0%, 50%);
+}
+.hero .hero-content h1{
+    font-size: 60px;
+    font-weight: lighter;
+    margin-bottom:50px;
+    line-height: 1.7;
+}
+.hero .hero-content p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.hero  .social {
+    position: absolute;
+    bottom: 30px;
+    left: 3%;
+}
+.hero  .social a{
+    color: #757575;
+    font-size: 17px;
+    margin-right: 3px;
+}
+.hero  .social a:hover{
+    color: #7575759d;
+}
+
+
+/* ############################################# */
+/* ########### About the company ################# */
+main{
+    text-align: center;
+}
+.section-title{
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+.section-subtitle{
+    display: block;
+    margin-bottom: 80px;
+
+}
+.about{
+    padding: 150px 5%;
+}
+
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px 0px;
+}
+.about .card-group .card{
+    width: 24%;
+}
+.about .card-group .card i{
+    font-size: 70px;
+}
+.about .card-group .card h5{
+    margin: 40px auto;
+}
+.about .card-group .card p{
+    font-weight: lighter;
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+
+/* ############################################# */
+/* ######/89/8//##### We know design.################# */
+.we-know{
+    background-color: #F1F1F1;
+    padding: 100px 0px;
+    height: 100%;
+    
+}
+.we-know .flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2%;
+    width: 100%;
+    
+}
+.we-know div{
+    width: 48%;
+    text-align: start;
+}
+
+.we-know .section-title{
+
+    margin-bottom:25px;
+}
+.we-know p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.we-know img{
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+/* ############################################# */
+/* ################### the team ############## */
+
+.team {
+    padding: 100px 0px;
+}
+.team .card-group {
+    justify-content: space-between;
+}
+.team .card{
+    width: 24%;
+    box-shadow: 1px 2px 7px 0px #adadad;
+    overflow: hidden;
+}
+
+.team .card img {
+    width: 100%;
+    filter: grayscale(50%);
+    -webkit-filter: grayscale(75%);
+}
+.team .card-content{
+    text-align: start;
+    padding: 15px;
+}
+.team .card h4{
+    font-family: "Raleway",sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.team .card span{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+    color: #A0A0A0;
+    margin: 25px 0;
+}
+.team .card p{
+    font-weight: lighter;
+    line-height: 1.7;
+}
+
+.team .card button{
+    width: 80%;
+    font-size: 15px;
+    padding: 16px 8px;
+    background-color: #F1F1F1;
+    margin: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.team .card button i{
+    margin-right: 5px;
+}
+.team .card button:hover{
+    background-color: #ccc;
+}
+
+/* ######################################### */
+/* ############### Statistics ########### */
+
+.statistics {
+    background-color: #616161;
+    padding: 100px 0px;
+}
+.statistics .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.statistics .container div{
+    color: #FFF;
+    font-size: 15px;
+    width: 25%;
+    margin-bottom: 30px;
+}
+.statistics .container div:last-child{
+    margin-bottom: 0;
+}
+.statistics .container div span{
+    font-size: 36px;
+    padding-bottom: 15px;
+    display: block;
+}
+
+/* ######################################### */
+/* ############### OUR WOrk ########### */
+.our-work{
+    padding: 100px 0;
+}
+.our-work .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.our-work .container img{
+    display: block;
+    width: 24%;
+    transition:  opacity .2s 0s ease-in ;
+    -webkit-transition:  opacity .2s 0s ease-in ;
+    -moz-transition:  opacity .2s 0s ease-in ;
+    -ms-transition:  opacity .2s 0s ease-in ;
+    -o-transition:  opacity .2s 0s ease-in ;
+}
+.our-work .container img:hover{
+    opacity: 0.6;
+}
+
+/* ######################################### */
+/* ############### OUR skills ########### */
+.skill {
+    width: 100% !important;
+    text-align: start;
+    margin-bottom: 25px;
+}
+.skill h4{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.skill h4 i{
+    margin-right: 20px;
+}
+.skill .progress{
+    display: block;
+    width: 100%;
+    height: 27px;
+    background-color: #adadad;
+    margin-top: 15px;
+    position: relative;
+    
+}
+.skill .progress .progress-bar{
+    height: 100%;
+    background-color: #616161;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* #################################### */
+/* ############### pricing ############ */
+
+.price {
+    padding: 100px 0;
+    background-color: #616161;
+    color: #FFF;
+}
+.price .card-group{
+    justify-content: space-between;
+    align-items: center;
+}
+.price .card{
+    width: 31%;
+    background-color: #FFF;
+    color: #000;
+}
+.price .card:hover{
+    box-shadow: 1px 1px 7px 0px #1f1f1f;
+}
+.price .card li:first-child{
+    border-top: none;
+    padding: 32px 16px;
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+}
+.price .card li {
+    padding: 16px;
+    border-top: 1px solid #ccc;
+    font-size: 15px;
+}
+.price .card li h2{
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+.price .card li span{
+    color: #A0A0A0;
+}
+.price .card li:last-child{
+    padding: 24px 16px;
+}
+.price .card li a{
+    display: inline-block;
+    background-color: #000;
+    color: #FFF;
+    padding: 15px 20px;
+}
+.price .card li a:hover{
+    display: inline-block;
+    color: #000;
+    background-color: #ccc;
+    padding: 15px 20px;
+}
+.price .active{
+    padding: 48px 16px !important;
+    background-color: #F44336 !important;
+    color: #FFF !important;
+}
+
+/* ###################################### */
+/* ############### contact ############# */
+
+.contact {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #F1F1F1;
+}
+.contact p{
+    font-size: 15px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    text-align: start;
+}
+.contact p i{
+    font-size: 40px;
+    margin-right: 30px;
+}
+
+.contact form{
+    text-align: start;
+}
+.contact form input {
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+}
+.contact form input:focus , .contact form input:active {
+    outline: 2px solid #0C75DE;
+}
+
+.contact img{
+    display: block;
+    margin-top: 70px;
+    width: 100%;
+    filter: grayscale(75%);
+    -webkit-filter: grayscale(75%);
+}
+
+
+/* ###################################### */
+/* ################  Footer ############# */
+footer {
+    background-color: #000;
+    padding: 70px 5%;
+    text-align: center;
+    color: #FFF;
+}
+footer .second-btn{
+    padding: 8px 16px;
+    background-color: #F1F1F1;
+    font-size: 15px;
+}
+footer .second-btn i{
+    margin-right: 16px;
+    font-weight: bolder;
+}
+footer .social{
+    color: #FFF;
+    font-size: 25px;
+    margin: 40px 0;
+}
+footer .social a{
+    cursor: auto;
+}
+footer p a{
+    text-decoration: underline;
+}
+footer p a:hover{
+    color: #24e25d;
+}
